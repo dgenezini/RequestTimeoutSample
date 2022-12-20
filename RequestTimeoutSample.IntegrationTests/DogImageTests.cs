@@ -107,7 +107,7 @@ public class DogImageTests: IClassFixture<WebApplicationFactory<Program>>
 
         var responseMessage = await apiHttpResponse.Content.ReadAsStringAsync();
 
-        responseMessage.Should().BeEquivalentTo("Request timed out or cancelled");
+        responseMessage.Should().BeEquivalentTo("Request timed out or canceled");
 
         wireMockSvr.Stop();
     }

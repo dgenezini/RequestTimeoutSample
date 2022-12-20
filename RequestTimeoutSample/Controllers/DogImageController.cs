@@ -28,7 +28,7 @@ public class DogImageController : ControllerBase
         {
             _logger.LogError(ex, ex.Message);
 
-            return StatusCode(StatusCodes.Status500InternalServerError, "Request timed out or cancelled");
+            return StatusCode(StatusCodes.Status500InternalServerError, "Request timed out or canceled");
         }
     }
 }
